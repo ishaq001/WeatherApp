@@ -1,0 +1,12 @@
+.header {
+  text-align: left;
+  border: transparent;
+  background-color: $eclipse;
+  padding: 2rem 3rem;
+  height: 50%;
+
+  &__title {
+    font-weight: 600;
+    color: white;
+  }
+}

@@ -1,0 +1,99 @@
+.weather-data {
+  text-align: center;
+  margin-top: 3rem;
+  
+  &__tagline {
+    max-width: 20%;
+    position: absolute;
+    right: 4%;
+    top: 34%;
+    font-size: 2rem;
+    font-weight: 300;
+    color: $white;
+
+    .__sys-country{
+      text-align: right ;
+    }
+    @include respond(tablet) {
+      font-size: 1.5rem;
+    }
+    @include respond(largeTablet) {
+      font-size: 1.5rem;
+    }@include respond(smallPhone) {
+      font-size: 2rem;
+    }
+    @include respond(largePhone) {
+      font-size: 2rem;
+    }
+
+  }
+
+
+  &__temp{
+    font-size: 7rem;
+    font-weight: 300;
+    color: $white;
+
+    .__degree{
+      font-size: 5rem;
+    }
+    @include respond(tablet) {
+      font-size: 5rem;
+    }
+    @include respond(largeTablet) {
+      font-size: 5rem;
+    }
+    @include respond(smallPhone) {
+      font-size: 8rem;
+    }
+    @include respond(largePhone) {
+      font-size: 8rem;
+    }
+
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    @include respond(tablet) {
+      margin-top: 2rem;
+    }
+    @include respond(largePhone) {
+      margin-top: 4rem;
+    }
+  }
+
+  &__property {
+    margin: 0 3rem;
+    @include respond(smallPhone) {
+      margin: 0 2rem;
+    }
+  }
+
+  .weather-temp{
+    position: absolute;
+    right: 0%;
+    top: 14%;
+  }
+
+  &__title {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    margin: 0px 60px;
+    padding-bottom: 20px;
+  }
+
+  &__value {
+    color: $colour-2;
+    font-size: 4rem;
+    line-height: 0.6;
+    @include respond(smallPhone) {
+      font-size: 3rem;
+    }
+  }
+}
